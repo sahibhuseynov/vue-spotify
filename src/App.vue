@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import MenuItem from './components/MenuItem.vue'
 import { RouterLink, RouterView } from "vue-router";
 
 import ChevronUp from "vue-material-design-icons/ChevronUp.vue";
@@ -49,7 +50,26 @@ let openMenu = ref(false);
     </span>
   </div>
 
- <div class="h-full p-6 w-60 z-50 fixed bg-black"></div>
+ <div class="h-full p-6 w-60 z-50 fixed bg-black">
+  <RouterLink to="/" >
+    <img src="../public/images/icons/spotify-logo.png" width="125">
+  </RouterLink>
+
+  <div class="my-8"></div>
+  <ul>
+    <RouterLink to="/" >
+      <MenuItem class="ml-[1px]"  :icon-size="23" name="Home" iconString="home" page-url="/"/>
+  </RouterLink>
+
+  <RouterLink to="/seacrh" >
+      <MenuItem class="ml-[1px]"  :icon-size="23" name="Search" iconString="search" page-url="/search"/>
+  </RouterLink>
+
+  <RouterLink to="/library" >
+      <MenuItem class="ml-[1px]"  :icon-size="23" name="Library" iconString="library" page-url="/library"/>
+  </RouterLink>
+  </ul>
+ </div>
   </div>
 </template>
 
