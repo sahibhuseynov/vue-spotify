@@ -61,7 +61,7 @@ let openMenu = ref(false);
       <MenuItem class="ml-[1px]"  :icon-size="23" name="Home" iconString="home" page-url="/"/>
   </RouterLink>
 
-  <RouterLink to="/seacrh" >
+  <RouterLink to="/search" >
       <MenuItem class="ml-[1px]"  :icon-size="23" name="Search" iconString="search" page-url="/search"/>
   </RouterLink>
 
