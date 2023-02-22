@@ -16,7 +16,7 @@ Prerequisites
 
 Clone the repository to your local machine
 bash
-git clone https://github.com/your-username/vue-spotify-clone.git
+https://github.com/sahibhuseynov/vue-spotify.git
 
 Navigate into the project directory
 cd vue-spotify-clone
